@@ -15,33 +15,33 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
   <body>
-    <aside>
-      <section class="bg-gray-800 text-white p-4">
+      <aside class="bg-gray-800 text-purple p-4">
         <nav class="container mx-auto flex justify-between items-center">
           <a href="#" class="flex items-center">
-            <img src="images/Logo.JPG" alt="Logo" class="logo-img" />
-            <a
-              href="index.html"
-              class="hidden md:block px-4 py-2 bg-gray-600 hover:bg-gray-700 rounded-lg"
-              >Meal Match</a
-            >
-          </a>
-
-          <a
-            href="about.html"
-            class="hidden md:block px-4 py-2 bg-gray-600 hover:bg-gray-700 rounded-lg"
-            >About</a
-          >
-
-          <button class="md:hidden">
-            <i class="fas fa-bars"></i>
+            <img src="images/Logo.JPG" alt="Logo" class="sm:w-32 md:w-48 lg:w-64" />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
           </button>
+          <nav class="menu-list">
+ 
+            <nav class="geeks">
+     
+                <a href="javascript:void(0);"
+                    class="icon" onclick="geeksforgeeks()">
+                    <i onclick="myFunction(this)"
+                        class="fa fa-plus-circle">
+                    </i>
+                </a>
+            </nav>
+            <nav id="menus">
+              <a href="index.html">Meal Match</a>
+              <a href="about.html">About</a>
+          </nav>
         </nav>
-      </section>
+        </nav>
     </aside>
 
     <main class="content bg-purple">
-      <nav class="expl">
+      <section class="expl">
         <p>
           Recipes: The website generates a random recipe and you can see it.
           Find a different meal, taste another culture, explore your tastes!
@@ -54,8 +54,8 @@
           Seach Recipes: You can search a recipe you know or you heard somewhere
           and kept you awake all night, thinking about it.
         </p>
-      </nav>
-      <nav class="expl2">
+      </section>
+      <section class="expl2">
         <p>
           Food. We cannot live without it. We need it to survive. Did you know
           that a person can survive for up to three weeks without food? Yea,
@@ -67,7 +67,7 @@
           truly enjoy them.
         </p>
         <p>Meal Match is here for you, whenever you need it!</p>
-      </nav>
+      </section>
     </main>
 
     <footer class="bg-gray-800 text-white py-4">
@@ -87,5 +87,21 @@
         <p>Developed: June, 2024</p>
       </nav>
     </footer>
+    <!-- It's here, because if I link it with like "src="js/app.js""it gives an error in the console.-->
+    <script>
+      function geeksforgeeks() {
+  let x = document.getElementById("menus");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function myFunction(x) {
+  x.classList.toggle("fa-minus-circle");
+}
+    </script>
+
   </body>
 </html>
