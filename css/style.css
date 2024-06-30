@@ -1,0 +1,30 @@
+.expl {
+  background-color: #dba858;
+  padding: 8%;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.expl2 {
+  background-color: #8c0e0f;
+  padding: 9%;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
