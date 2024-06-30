@@ -16,29 +16,34 @@
     />
   </head>
   <body>
-      <aside class="bg-gray-800 text-purple p-4">
-        <nav class="container mx-auto flex justify-between items-center">
-          <a href="#" class="flex items-center">
-            <img src="images/Logo.JPG" alt="Logo" class="sm:w-32 md:w-48 lg:w-64" />
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-          </button>
-          <nav class="menu-list">
- 
-            <nav class="geeks">
-     
-                <a href="javascript:void(0);"
-                    class="icon" onclick="geeksforgeeks()">
-                    <i onclick="myFunction(this)"
-                        class="fa fa-plus-circle">
-                    </i>
-                </a>
-            </nav>
-            <nav id="menus">
-              <a href="index.html">Meal Match</a>
-              <a href="about.html">About</a>
+    <aside class="bg-gray-800 text-purple p-4">
+      <nav class="container mx-auto flex justify-between items-center">
+        <img src="images/Logo.JPG" alt="Logo" class="sm:w-32 md:w-48 lg:w-64" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1"
+          aria-controls="bs-example-navbar-collapse-1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
+        <nav style="color: #fb8500" class="menu-list">
+          <nav class="geeks">
+            <a
+              href="javascript:void(0);"
+              class="icon"
+              onclick="geeksforgeeks()"
+            >
+              <i onclick="myFunction(this)" class="fa fa-plus-circle"> </i>
+            </a>
+          </nav>
+          <nav id="menus">
+            <a href="index.html">Meal Match</a>
+            <a href="about.html">About</a>
           </nav>
         </nav>
-        </nav>
+      </nav>
     </aside>
 
     <main class="content bg-purple">
@@ -71,7 +76,7 @@
       </section>
     </main>
 
-    <footer class="bg-gray-800 text-white py-4">
+    <footer style="color: #fb8500" class="bg-gray-800 text-white py-4">
       <nav class="container mx-auto flex justify-center items-center">
         <a
           href="https://www.linkedin.com/in/kaloyan-dimitrov-308606310/"
@@ -91,18 +96,17 @@
     <!-- It's here, because if I link it with like "src="js/app.js""it gives an error in the console.-->
     <script>
       function geeksforgeeks() {
-  let x = document.getElementById("menus");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+        let x = document.getElementById("menus");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
 
-function myFunction(x) {
-  x.classList.toggle("fa-minus-circle");
-}
+      function myFunction(x) {
+        x.classList.toggle("fa-minus-circle");
+      }
     </script>
-
   </body>
 </html>
